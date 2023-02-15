@@ -4,9 +4,9 @@ import Link from "next/link";
 type Props = {};
 const lists = [
   { name: "home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "users", url: "/users" },
-  { name: "Posts", url: "/posts" },
+  { name: "Products", url: "products" },
+  { name: "users", url: "users" },
+  { name: "Posts", url: "posts" },
 ];
 const Nav = (props: Props) => {
   return (

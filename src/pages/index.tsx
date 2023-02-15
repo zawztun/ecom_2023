@@ -16,9 +16,6 @@ export default function Home(props: HeroProps) {
   const { posts, products, users } = props;
   const { keyword, setKeyWord, productsResults, postsResults, usersResults } =
     useFetch({ products, users, posts });
-  console.log(postsResults);
-  console.log(usersResults);
-  console.log(productsResults);
   return (
     <>
       <Head>
@@ -119,7 +116,6 @@ export async function getStaticProps() {
     "https://dummyjson.com/users?limit=4&skip=4&select=firstName,age,lastName,image,email,ssn,birthDate"
   );
   const { users } = await user_res.json();
-  console.log(posts.tags);
   return {
     props: {
       products,
